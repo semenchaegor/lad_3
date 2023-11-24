@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&family=Sometype+Mono&display=swap');
+body {
+height: 100vh;
+background :url(images/космос\ -\ фон\ 2.jpg) no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+/* padding: 60px; */
+}
+body, html {
+    height: 100%;
+    margin: 200px 0 0 0; /* Встановлюємо відступ 10px від верхньої частини */
+}
+
+p {
+font-family: 'Noto Sans NKo Unjoined', sans-serif;
+font-family: 'Sometype Mono', monospace;
+font-size: 20px;
+color: #dac5c5;
+}
+* {
+margin: 0%;
+padding: 0;
+box-sizing: border-box ;
+font-family: 'Times New Roman', Times, serif;
+list-style: none;
+text-decoration: none;
+}
+
+p {
+color: aliceblue;
+/* background-color: rgba(255, 255, 255, 0.5); */
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: aliceblue;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 8%;
+box-shadow: 0 5px 10px black;
+
+}
+header .logo {
+font-size: 30px;
+font-weight: 900;
+color: black;
+transition: .5s ;
+}
+header .logo:hover {
+transform: scale(1.2);
+
+}
+header nav ul li {
+position: relative;
+float: left;
+}
+header nav ul li a {
+padding: 15px ;
+color: black;
+font-size: 16px;
+display: block;
+
+}
+header nav ul li a:hover {
+background: black;
+color: aliceblue;
+
+}
+nav ul li ul {
+position: absolute;
+left: 0;
+width: 180px;
+background: white;
+display: none;
+}
+nav ul li ul li {
+width: 100%;
+border: 1px solid rgba(0, 0, 0, .1) ;
+}
+nav ul li ul li ul {
+left: 180px;
+top:
+0;
+}
+nav ul li:hover > ul{
+display: initial;
+}
+html {
+scroll-behavior: smooth;
+}
+/*  */
+.img1 {
+    text-align: center;
+    border-radius: 30px;
+    max-width: 250px ;
+    margin: 500px;
+}
+.img2 {
+    text-align: center;
+    border-radius: 30px;
+    max-width: 250px ;
+    margin: 500px;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    height: 100%;
+    padding-top: 15%;
+}
+
+.vertical-column {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex; /* Додаємо вирівнювання контенту всередині колонки */
+    justify-content: center; /* Вирівнювання тексту по горизонталі у центрі */
+    align-items: center; 
+}
+.text {
+    text-align: center;
+    max-width: 300px;
+}
+
+.centered-content {
+    text-align: center;
+    padding-top: 300px;
+}
+.centered-content1 {
+    text-align: right;
+    /* padding-top: 800px; */
+}
+
+.centered-content p {
+    margin: 0; /* Видаляє зовнішній відступ для кращого вирівнювання */
+}
+
+#column1{margin-left: 5%;}
+#column2{margin-top: 0%;}
+#margined-text{margin-top: 10%;}

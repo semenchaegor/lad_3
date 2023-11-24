@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&family=Sometype+Mono&display=swap');
+p {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 30px;
+    color: #dac5c5;
+}
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    background :url(images/космос\ -\ фон\ 2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 60px;
+}
+/* body > * {
+    margin-top: 20px;
+} */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px black;
+
+}
+header .logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    transition: .5s ;
+}
+header .logo:hover {
+    transform: scale(1.2);
+
+}
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px ;
+    color: black;
+    font-size: 16px;
+    display: block;
+
+}
+header nav ul li a:hover {
+    background: black;
+    color: aliceblue;
+
+}
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1) ;
+}
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+nav ul li:hover > ul{
+    display: initial;
+}
+html {
+scroll-behavior: smooth;
+}
+.fixed-text {
+font-family:"" ;
+border: 1px solid black;
+color: blue;
+position: fixed;
+bottom:  0; 
+left: 0; /* Розташовуємо текст у лівому кутку */
+padding: 2px; /* Відступи від краю */
+font-size: 20px;
+font-weight: bold;
+opacity: 0.7; /* Значення 0.5 робить текст наполовину прозорим */
+}
+a:active{
+    color: purple
+}
+.container-block {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr 2fr;
+grid-gap: 5px;
+}
+.item {
+border-radius: 20%;
+}
+.hover-image {
+display: none; /* Зображення спочатку приховане */
+border-radius: 20%;
+height: 200px;
+opacity: 1;
+box-shadow: 0 5px 10px black;
+}
+
+
+.hover-text:hover {
+color: transparent; /* Зробити текст прозорим при наведенні */
+
+}
+.hover-image, .hover-text {
+width: 100%;
+height: 100%;
+}
+
+.hover-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.hover-text:hover + .hover-image {
+display: inline-block; /* Показати зображення при наведенні на текст */
+}
+.container {
+position: relative;
+height: 300px;
+width: 300px; /* Розмір контейнера з фіксованою шириною */
+margin: 0 auto;
+text-align: center;
+}
+.text {
+max-width: 350px; /* Максимальна ширина рядка тексту */
+text-align: center;
+}
+.container1 {
+display: flex;
+justify-content: center;
+}
+
+#link-up{
+    color: blue;
+}
+
+#link-up:hover{
+    color: blueviolet;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: white;
+    padding-left: 40px;
+  }

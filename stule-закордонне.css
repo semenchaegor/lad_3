@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&family=Sometype+Mono&display=swap');
+body {
+height: 100vh;
+background :url(images/космос\ -\ фон\ 2.jpg) no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+padding: 60px;
+}
+p {
+font-family: 'Noto Sans NKo Unjoined', sans-serif;
+font-family: 'Sometype Mono', monospace;
+font-size: 20px;
+color: #dac5c5;
+}
+* {
+margin: 0%;
+padding: 0;
+box-sizing: border-box ;
+font-family: 'Times New Roman', Times, serif;
+list-style: none;
+text-decoration: none;
+}
+
+p {
+color: aliceblue;
+/* background-color: rgba(255, 255, 255, 0.5); */
+}
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: aliceblue;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 8%;
+box-shadow: 0 5px 10px black;
+
+}
+header .logo {
+font-size: 30px;
+font-weight: 900;
+color: black;
+transition: .5s ;
+}
+header .logo:hover {
+transform: scale(1.2);
+
+}
+header nav ul li {
+position: relative;
+float: left;
+}
+header nav ul li a {
+padding: 15px ;
+color: black;
+font-size: 16px;
+display: block;
+
+}
+header nav ul li a:hover {
+background: black;
+color: aliceblue;
+
+}
+nav ul li ul {
+position: absolute;
+left: 0;
+width: 180px;
+background: white;
+display: none;
+}
+nav ul li ul li {
+width: 100%;
+border: 1px solid rgba(0, 0, 0, .1) ;
+}
+nav ul li ul li ul {
+left: 180px;
+top:
+0;
+}
+nav ul li:hover > ul{
+display: initial;
+}
+html {
+scroll-behavior: smooth;
+}
+
+.container {
+position: relative;
+width: 300px;
+}
+
+#text {
+position: absolute;
+max-height: 150px;
+top: 0;
+left: 0;
+margin: 0;
+padding: 10px;
+opacity: 1;
+transition: opacity 0.5s;
+}
+
+#image {
+width: 100%;
+height: auto;
+opacity: 0;
+transition: opacity 0.5s;
+text-align: center;
+width: 250px;
+height: 250px;
+border-radius: 40px;
+}
+
+.container:hover #text {
+opacity: 0;
+}
+
+.container:hover #image {
+opacity: 1;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: 1fr 0fr;
+grid-gap: 5px;
+column-gap: 50px;
+row-gap: 100px;
+margin:  15% 20%;
+
+}
+.centr {
+text-align: center;
+padding: 50px 50px ;
+}
+h1 {
+color: #e9e4e4;
+}
